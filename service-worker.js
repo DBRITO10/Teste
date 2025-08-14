@@ -1,6 +1,6 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('despesas-store-v5-v5').then(function(cache) {
+    caches.open('despesas-store-v6-v2').then(function(cache) {
       return cache.addAll([
         './',
         './index.html',
