@@ -100,8 +100,232 @@
 </style>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#2b8cff">
+
+<style>
+body.light-theme {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+body.light-theme * {
+  color: #000000 !important;
+}
+</style>
+
+
+<style>
+body.light-theme {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  --accent: #000000 !important;
+  --success: #000000 !important;
+  --warning: #000000 !important;
+  --danger: #000000 !important;
+  --info: #000000 !important;
+}
+</style>
+
+
+<style>
+/* ===== TEMA CLARO REFORMULADO ===== */
+body.light-theme {
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
+
+  --accent: #007bff !important; /* Azul vivo para destaques */
+  --success: #28a745 !important; /* Verde moderado para sucesso */
+  --warning: #ffc107 !important; /* Amarelo para avisos */
+  --danger: #dc3545 !important;  /* Vermelho para erros */
+  --info: #17a2b8 !important;    /* Azul claro para informações */
+
+  --card: #ffffff !important;    /* Fundo branco para cartões */
+  --muted: #6c757d !important;   /* Cinza para textos secundários */
+}
+
+body.light-theme .card {
+  background-color: var(--card) !important;
+  color: #1a1a1a !important;
+  border: 1px solid #e0e0e0 !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05) !important;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6 {
+  color: #000000 !important;
+}
+
+body.light-theme a {
+  color: var(--accent) !important;
+}
+
+body.light-theme button,
+body.light-theme .btn {
+  color: #ffffff !important;
+  border: none !important;
+}
+
+body.light-theme .btn-primary { background-color: var(--accent) !important; }
+body.light-theme .btn-success { background-color: var(--success) !important; }
+body.light-theme .btn-warning { background-color: var(--warning) !important; color: #000000 !important; }
+body.light-theme .btn-danger { background-color: var(--danger) !important; }
+body.light-theme .btn-info { background-color: var(--info) !important; }
+
+body.light-theme input,
+body.light-theme select,
+body.light-theme textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 1px solid #ccc !important;
+}
+
+body.light-theme table {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-collapse: collapse !important;
+}
+
+body.light-theme th,
+body.light-theme td {
+  border: 1px solid #e0e0e0 !important;
+}
+
+body.light-theme header,
+body.light-theme nav {
+  background-color: #f8f9fa !important;
+  color: #000000 !important;
+}
+
+body.light-theme footer {
+  background-color: #f1f1f1 !important;
+  color: #000000 !important;
+}
+</style>
+
+
+<style>
+/* Ajustes adicionais para o tema claro */
+body.light-theme .modal-header {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #ddd !important;
+}
+body.light-theme .modal-header .close,
+body.light-theme .modal-header button {
+  color: #000000 !important;
+}
+body.light-theme .btn-edit,
+body.light-theme .edit-button,
+body.light-theme button.edit {
+  color: #000000 !important;
+}
+</style>
+
+
+<style>
+/* Ajustes de cores no tema claro para modais */
+body.light-theme .modal-header {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-bottom: 1px solid #ddd !important;
+}
+body.light-theme .modal-header .close,
+body.light-theme .modal-header button {
+  color: #000000 !important;
+}
+body.light-theme .btn-edit,
+body.light-theme .edit-button,
+body.light-theme button.edit,
+body.light-theme [title="Editar"] {
+  color: #000000 !important;
+}
+</style>
+
+
+<style>
+/* Forçar o X do modal a ser preto no tema claro */
+body.light-theme .modal-header .close,
+body.light-theme .modal-header .close svg,
+body.light-theme .modal-header .close path,
+body.light-theme .modal-header button.close,
+body.light-theme .modal-header button.close svg,
+body.light-theme .modal-header button.close path {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+}
+</style>
+
+
+<style>
+/* X do modal no tema claro - ajuste definitivo */
+body.light-theme .modal-header .close,
+body.light-theme .modal-header .btn-close,
+body.light-theme .modal-header [aria-label="Close"],
+body.light-theme .modal-header svg,
+body.light-theme .modal-header path,
+body.light-theme .modal-header use {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+  opacity: 1 !important;
+}
+</style>
+
+
+<style>
+/* Garantir que QUALQUER X de modal no tema claro apareça preto */
+body.light-theme .close,
+body.light-theme .btn-close,
+body.light-theme [aria-label="Close"],
+body.light-theme button[aria-label="Close"],
+body.light-theme svg,
+body.light-theme svg path,
+body.light-theme svg use {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+  opacity: 1 !important;
+}
+</style>
+
+
+<style>
+/* Forçar X preto nos modais de Detalhes e Adicionar no tema claro */
+body.light-theme .modal.modal-detalhes .close,
+body.light-theme .modal.modal-detalhes .btn-close,
+body.light-theme .modal.modal-detalhes [aria-label="Close"],
+body.light-theme .modal.modal-detalhes svg,
+body.light-theme .modal.modal-detalhes svg path,
+body.light-theme .modal.modal-detalhes svg use,
+body.light-theme .modal.modal-adicionar .close,
+body.light-theme .modal.modal-adicionar .btn-close,
+body.light-theme .modal.modal-adicionar [aria-label="Close"],
+body.light-theme .modal.modal-adicionar svg,
+body.light-theme .modal.modal-adicionar svg path,
+body.light-theme .modal.modal-adicionar svg use {
+  color: #000000 !important;
+  fill: #000000 !important;
+  stroke: #000000 !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+</style>
+
 </head>
 <body>
+
+<button id="installPWA" style="position:fixed;bottom:20px;right:20px;z-index:2000;background:#4CAF50;color:#fff;border:none;padding:10px 16px;border-radius:30px;box-shadow:0 4px 6px rgba(0,0,0,0.3);cursor:pointer;display:none;">📲 Instalar App</button>
+
+
+<div id="menuBtn" style="position:fixed;bottom:20px;left:20px;z-index:2000;cursor:pointer;font-size:26px;background:#4CAF50;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 6px rgba(0,0,0,0.3);">☰</div>
+<div id="menuDropdown" style="display:none;position:fixed;bottom:80px;left:20px;z-index:2000;background:#fff;color:#000;border:1px solid #ccc;border-radius:5px;box-shadow:0 4px 6px rgba(0,0,0,0.2);min-width:150px;">
+  <div id="setDarkTheme" style="padding:10px 20px;cursor:pointer;border-bottom:1px solid #ddd;">🌙 Tema Escuro</div>
+  <div id="setLightTheme" style="padding:10px 20px;cursor:pointer;">☀️ Tema Claro</div>
+</div>
+
 <header>
   <h1>
     Minhas Despesas
@@ -178,7 +402,7 @@
         <label for="repeticao">Repetição</label>
         <select id="repeticao">
           <option value="unica">Única</option>
-          <option value="fixo">Fixo (12 meses)</option>
+          
           <option value="parcelado">Parcelado</option>
         </select>
       </div>
@@ -439,5 +663,43 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log('Service Worker registrado!'));
 }
 </script>
+
+<script>
+// ================== TEMA ==================
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light-theme');
+}
+const menuBtn = document.getElementById('menuBtn');
+const menuDropdown = document.getElementById('menuDropdown');
+menuBtn.addEventListener('click', () => {
+  menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
+});
+document.getElementById('setDarkTheme').addEventListener('click', () => {
+  document.body.classList.remove('light-theme');
+  localStorage.setItem('theme', 'dark');
+  menuDropdown.style.display = 'none';
+});
+document.getElementById('setLightTheme').addEventListener('click', () => {
+  document.body.classList.add('light-theme');
+  localStorage.setItem('theme', 'light');
+  menuDropdown.style.display = 'none';
+});
+
+// ================== PWA INSTALL ==================
+let deferredPrompt;
+const installBtn = document.getElementById('installPWA');
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+installBtn.addEventListener('click', async () => {
+  installBtn.style.display = 'none';
+  deferredPrompt.prompt();
+  const choiceResult = await deferredPrompt.userChoice;
+  deferredPrompt = null;
+});
+</script>
+
 </body>
 </html>
